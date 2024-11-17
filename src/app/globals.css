@@ -2,20 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/*.animated-button {*/
+/*    position: relative;*/
+/*    overflow: hidden; !* Ensure the gradient stays within the button bounds *!*/
+/*    padding: 12px 24px;*/
+/*    font-size: 1rem;*/
+/*    border-radius: 4px;*/
+/*    cursor: pointer;*/
+/*    transition: color 1s ease-in-out; !* Smooth text color change *!*/
+/*}*/
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/*.animated-button::before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: -100%; !* Start the gradient off-screen *!*/
+/*    width: 10%;*/
+/*    height: 100%;*/
+/*    background: linear-gradient(to bottom right, blue, #BEC5FC);*/
+/*    z-index: 0;*/
+/*    transition: transform 1s ease-in-out;*/
+/*}*/
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+/*.animated-button:hover::before {*/
+/*    transform: translateX(1000%); !* Slide the gradient across the button *!*/
+/*    left: 0; !* Center the gradient *!*/
+/*}*/
+
+/*.animated-button:hover {*/
+/*    color: #ffffff; !* Change text color on hover *!*/
+/*}*/
+
+/*.animated-button > * {*/
+/*    position: relative;*/
+/*    z-index: 1; !* Ensure the content is above the gradient *!*/
+/*}*/

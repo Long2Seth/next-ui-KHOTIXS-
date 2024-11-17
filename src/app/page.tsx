@@ -1,101 +1,249 @@
-import Image from "next/image";
+import {Button} from "@nextui-org/react";
+import "./globals.css";
+
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    return (
+        <main
+            className="relative bg-gradient-to-br from-[#EBD0FF] to-[#BEC5FC] min-h-screen flex items-center justify-center">
+            {/* Blur overlay */}
+            <div className="absolute inset-0 bg-white/30"></div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+            {/* Content */}
+            <section className="flex flex-col gap-5 ">
+
+                <h1 className="block text-4xl relative mt-[200px] ">
+                    Welcome to KHOTIXS 🚀
+                </h1>
+                <div className="flex gap-x-[150px] my-[200px] ">
+                    <Button
+                        color="primary"
+                        className="animated-button bg-amber-400 text-black rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button bg-blue-600 text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button bg-[#84CEEB] text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button bg-[#8860D0] text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+                </div>
+
+                {/* Block gradient color */}
+                <div className="flex gap-x-[150px] my-[200px] ">
+                    <Button
+                        color="primary"
+                        className="animated-button bg-gradient-to-r from-[#8e9eab] to-[#eef2f3] text-black rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#136a8a] to-[#267871]  text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#00bf8f] to-[#001510]  text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#6441a5] to-[#2a0845]  text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button bg-gradient-to-r from-[#ffb347] to-[#ffcc33] text-black rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#abbaab] to-[#ffffff]  text-black rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#485563] to-[#29323c]  text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#556270] to-[#ff6b6b]  text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+                </div>
+
+
+                <div className="flex gap-x-[150px] my-[200px] ">
+                    <Button
+                        color="primary"
+                        className="animated-button bg-gradient-to-r from-[#aaffa9] to-[#11ffbd] text-black rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#9d50bb] to-[#6e48aa]  text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#780206] to-[#061161]  text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#b3ffab] to-[#12fff7]  text-black rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button bg-gradient-to-r from-[#a8c0ff] to-[#3f2b96] text-black rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#232526] to-[#414345]  text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#4776e6] to-[#8e54e9]  text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#da22ff] to-[#9733ee]  text-black rounded-[4px] ">
+                        Get Started
+                    </Button>
+                </div>
+
+
+                <div className="flex gap-x-[150px] my-[200px] ">
+                    <Button
+                        color="primary"
+                        className="animated-button bg-gradient-to-r from-[#606c88] to-[#3f4c6b] text-black rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#870000] to-[#190a05]  text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#00d2ff] to-[#3a7bd5]  text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#e6dada] to-[#274046]  text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button bg-gradient-to-r from-[#4b6cb7] to-[#182848] text-black rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#c04848] to-[#480048]  text-black rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#5f2c82] to-[#49a09d]  text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#7474bf] to-[#348ac7]  text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+
+                </div>
+
+
+                <div className="flex gap-x-[150px] my-[200px] ">
+                    <Button
+                        color="primary"
+                        className="animated-button bg-gradient-to-r from-[#ece9e6] to-[#ffffff] text-black rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#232526] to-[#414345]  text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#4776e6] to-[#8e54e9]  text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#da22ff] to-[#9733ee]  text-black rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button bg-gradient-to-r from-[#1488cc] to-[#2b32b2] text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#9796f0] to-[#fbc7d4]  text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#536976] to-[#292e49]  text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#8e2de2] to-[#4a00e0]  text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+                </div>
+
+
+                <div className="flex gap-x-[150px] my-[200px] ">
+                    <Button
+                        color="primary"
+                        className="animated-button bg-gradient-to-r from-[#f953c6] to-[#b91d73] text-black rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#ff416c] to-[#ff4b2b]  text-black rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#ed213a] to-[#93291e]  text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+                    <Button
+                        color="primary"
+                        className="animated-button  bg-gradient-to-r from-[#00b4db] to-[#0083b0]  text-white rounded-[4px] ">
+                        Get Started
+                    </Button>
+                </div>
+
+
+
+
+            </section>
+
+        </main>
+    );
 }
